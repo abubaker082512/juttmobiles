@@ -1,0 +1,194 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-xs);
+  color: var(--text-muted);
+  margin-bottom: var(--space-6);
+}
+
+.breadcrumb a {
+  color: var(--accent-cyan);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover { text-decoration: underline; }
+.breadcrumb-active { color: var(--text-primary); font-weight: 600; }
+
+.catalog-page-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-bottom: var(--space-8);
+}
+
+.catalog-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.sort-wrapper { position: relative; }
+.sort-icon {
+  position: absolute;
+  right: var(--space-3);
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.filter-toggle { display: none; }
+
+/* Sidebar */
+.catalog-sidebar {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  height: fit-content;
+  position: sticky;
+  top: calc(var(--header-height) + var(--space-6));
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-5);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.filter-section {
+  padding: var(--space-4) 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.filter-section:last-child { border-bottom: none; }
+
+.filter-title {
+  font-size: var(--font-size-xs);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: var(--space-3);
+}
+
+.filter-options { display: flex; flex-direction: column; gap: var(--space-2); }
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: var(--space-1) 0;
+  transition: var(--transition);
+}
+
+.filter-option:hover { color: var(--text-primary); }
+
+.filter-checkbox {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1.5px solid var(--border-light);
+  border-radius: 4px;
+  background: var(--bg-secondary);
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: var(--transition);
+  position: relative;
+}
+
+.filter-checkbox:checked {
+  background: var(--accent-cyan);
+  border-color: var(--accent-cyan);
+}
+
+.filter-checkbox:checked::after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 1px;
+  width: 8px;
+  height: 5px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(-45deg);
+}
+
+.filter-count {
+  margin-left: auto;
+  font-size: var(--font-size-xs);
+  color: var(--text-muted);
+  background: var(--bg-secondary);
+  padding: 1px 6px;
+  border-radius: var(--radius-full);
+}
+
+.search-wrap { position: relative; }
+.search-icon {
+  position: absolute;
+  left: var(--space-3);
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  pointer-events: none;
+}
+.search-clear {
+  position: absolute;
+  right: var(--space-3);
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+}
+
+.price-slider {
+  width: 100%;
+  appearance: none;
+  height: 4px;
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-full);
+  outline: none;
+}
+.price-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--accent-cyan);
+  cursor: pointer;
+  box-shadow: 0 0 8px rgba(6,182,212,0.4);
+}
+
+@media (max-width: 900px) {
+  .filter-toggle { display: flex; }
+  .catalog-sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 300px;
+    z-index: 300;
+    overflow-y: auto;
+    border-radius: 0;
+    border-right: 1px solid var(--border-light);
+  }
+  .sidebar-open { display: block !important; }
+}
+
+@media (max-width: 640px) {
+  .catalog-page-header { flex-direction: column; align-items: flex-start; }
+}
