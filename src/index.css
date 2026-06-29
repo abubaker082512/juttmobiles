@@ -9,43 +9,43 @@
 /* --- CSS Custom Properties (Design Tokens) --- */
 :root {
   /* Colors */
-  --bg-primary: #080c14;
-  --bg-secondary: #0d1525;
-  --bg-tertiary: #111f35;
-  --bg-card: #0f1c2e;
-  --bg-card-hover: #152236;
-  --bg-glass: rgba(15, 28, 46, 0.75);
-  --bg-glass-hover: rgba(21, 34, 54, 0.85);
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --bg-tertiary: #f1f5f9;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f8fafc;
+  --bg-glass: rgba(255, 255, 255, 0.85);
+  --bg-glass-hover: rgba(248, 250, 252, 0.95);
 
-  --accent-cyan: #06b6d4;
-  --accent-blue: #3b82f6;
-  --accent-purple: #8b5cf6;
-  --accent-green: #10b981;
-  --accent-red: #ef4444;
-  --accent-orange: #f59e0b;
+  --accent-cyan: #0f172a;
+  --accent-blue: #1e293b;
+  --accent-purple: #475569;
+  --accent-green: #16a34a;
+  --accent-red: #dc2626;
+  --accent-orange: #ea580c;
 
-  --gradient-primary: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
-  --gradient-secondary: linear-gradient(135deg, #8b5cf6 0%, #3b82f6 100%);
-  --gradient-warm: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
-  --gradient-hero: linear-gradient(135deg, #080c14 0%, #0d1525 40%, #111f35 100%);
+  --gradient-primary: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  --gradient-secondary: linear-gradient(135deg, #475569 0%, #1e293b 100%);
+  --gradient-warm: linear-gradient(135deg, #ea580c 0%, #dc2626 100%);
+  --gradient-hero: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
 
-  --text-primary: #f1f5f9;
-  --text-secondary: #94a3b8;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
   --text-muted: #64748b;
   --text-dark: #0f172a;
 
-  --border-subtle: rgba(255, 255, 255, 0.06);
-  --border-light: rgba(255, 255, 255, 0.1);
-  --border-cyan: rgba(6, 182, 212, 0.3);
-  --border-glow: rgba(6, 182, 212, 0.5);
+  --border-subtle: rgba(15, 23, 42, 0.08);
+  --border-light: rgba(15, 23, 42, 0.12);
+  --border-cyan: rgba(15, 23, 42, 0.15);
+  --border-glow: rgba(15, 23, 42, 0.25);
 
   /* Shadows */
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
-  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
-  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.6);
-  --shadow-glow: 0 0 24px rgba(6, 182, 212, 0.2);
-  --shadow-glow-strong: 0 0 40px rgba(6, 182, 212, 0.35);
-  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.04);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+  --shadow-glow: 0 0 16px rgba(0, 0, 0, 0.03);
+  --shadow-glow-strong: 0 0 24px rgba(0, 0, 0, 0.06);
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(15, 23, 42, 0.05);
 
   /* Typography */
   --font: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;

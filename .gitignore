@@ -25,3 +25,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Scratch and downloaded assets for analysis
+lovable-styles.css
+page.html
+scratch-*.js
+scratch-*.cjs

@@ -8,7 +8,7 @@ import { useShop } from '../context/ShopContext';
 import './Header.css';
 
 export default function Header() {
-  const { cartCount, categories, user, profile, signOut, settings, isAdmin } = useShop();
+  const { cartCount, categories, user, profile, signOut, settings, isAdmin, products } = useShop();
   const navigate = useNavigate();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
@@ -47,12 +47,9 @@ export default function Header() {
       <header className="header">
         <div className="container header-inner">
           {/* Logo */}
+          {/* Logo */}
           <Link to="/" className="header-logo">
-            <div className="logo-icon">J</div>
-            <div>
-              <div className="logo-text">{settings.shop_name || 'Jutt Mobiles'}</div>
-              <div className="logo-sub">Pakistan</div>
-            </div>
+            <img src="/assets/logo-C1AVTE2X.png" alt={settings.shop_name || 'Jutt Mobiles'} className="header-logo-img" />
           </Link>
 
           {/* Desktop Nav */}
@@ -70,7 +67,22 @@ export default function Header() {
                 </Link>
                 {activeDropdown === cat.id && (
                   <div className="nav-dropdown">
-                    <Link to={`/category/${cat.slug}`} className="dropdown-item dropdown-view-all">
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                      {(products || [])
+                        .filter(p => (p.category_id === cat.id || p.category_slug === cat.slug) && p.status === 'published')
+                        .slice(0, 3)
+                        .map(p => (
+                          <Link key={p.id} to={`/products/${p.slug}`} className="dropdown-item-product" onClick={() => setActiveDropdown(null)}>
+                            <img src={Array.isArray(p.images) ? p.images[0] : p.images} alt={p.name} className="dropdown-product-img" />
+                            <div className="dropdown-product-info">
+                              <div className="dropdown-product-name">{p.name}</div>
+                              <div className="dropdown-product-price">{settings.currency_symbol || 'Rs.'} {(p.sale_price || p.price)?.toLocaleString()}</div>
+                            </div>
+                          </Link>
+                        ))}
+                    </div>
+                    <div className="dropdown-divider" />
+                    <Link to={`/category/${cat.slug}`} className="dropdown-item dropdown-view-all" onClick={() => setActiveDropdown(null)}>
                       View All {cat.name}
                     </Link>
                   </div>

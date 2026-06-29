@@ -21,7 +21,7 @@ export const PRODUCTS = [
     badge: 'New', rating: 4.5, review_count: 38,
     short_description: 'Ultra-clear 9H hardness tempered glass screen protector with full coverage.',
     description: 'Protect your screen with Jutt premium tempered glass. 9H hardness rating offers superior scratch resistance. Easy bubble-free installation kit included.',
-    images: ['https://images.unsplash.com/photo-1556656793-08538906a9f8?w=600&q=80'],
+    images: ['/assets/feature-product-BP1DexGI.jpg'],
     specifications: { 'Hardness': '9H', 'Material': 'Tempered Glass', 'Coverage': 'Full', 'Thickness': '0.3mm', 'Oleophobic Coating': 'Yes', 'Touch Response': '99%' },
   },
   {
@@ -31,7 +31,7 @@ export const PRODUCTS = [
     badge: null, rating: 4.7, review_count: 56,
     short_description: 'Premium liquid silicone case with built-in MagSafe magnet ring for wireless charging.',
     description: 'Crafted from premium liquid silicone with a soft microfiber lining, this MagSafe-compatible case perfectly balances protection and elegance. Features precise cutouts and a raised bezel for screen and camera protection.',
-    images: ['https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=600&q=80'],
+    images: ['/assets/powerbank-4-17eCjlqr.jpg'],
     specifications: { 'Material': 'Liquid Silicone', 'Compatibility': 'iPhone 13/14/15 Series', 'MagSafe': 'Yes', 'Drop Protection': '2m', 'Colors Available': '8' },
   },
   {
@@ -41,7 +41,7 @@ export const PRODUCTS = [
     badge: 'Hot', rating: 4.6, review_count: 29,
     short_description: 'Adjustable aluminium alloy desktop stand for phones and tablets up to 13".',
     description: 'Sleek and sturdy aluminium alloy tablet stand with 360° rotation and adjustable angle. Anti-slip silicone pads prevent scratches and keep devices secure. Folds flat for travel convenience.',
-    images: ['https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=600&q=80'],
+    images: ['/assets/powerbank-3-Dzxoht3C.jpg'],
     specifications: { 'Material': 'Aluminium Alloy', 'Device Size': 'Up to 13"', 'Adjustable Angle': 'Yes', 'Rotation': '360°', 'Foldable': 'Yes', 'Weight': '280g' },
   },
   {
@@ -51,7 +51,7 @@ export const PRODUCTS = [
     badge: null, rating: 4.4, review_count: 72,
     short_description: 'Premium braided USB-C to Lightning cable with 30W fast charging support.',
     description: 'Double-braided nylon cable with reinforced connector heads for durability. Supports 30W PD fast charging and high-speed data transfer.',
-    images: ['https://images.unsplash.com/photo-1583863788434-e62db09aed2a?w=600&q=80'],
+    images: ['/assets/powerbank-2-l4eDv4NK.jpg'],
     specifications: { 'Length': '1m', 'Material': 'Braided Nylon', 'Power Delivery': '30W', 'Data Speed': 'USB 2.0', 'MFi Certified': 'Yes' },
   },
 
@@ -63,7 +63,7 @@ export const PRODUCTS = [
     badge: null, rating: 4.5, review_count: 91,
     short_description: 'Charge all your devices with one cable — Lightning, USB-C, and Micro USB.',
     description: 'Premium braided 3-in-1 multi-charging cable compatible with all major device types. Tangle-free design with 25W fast charging. 1.2m length with retractable ends.',
-    images: ['https://images.unsplash.com/photo-1605600659908-0ef719419d41?w=600&q=80'],
+    images: ['/assets/powerbank-2-l4eDv4NK.jpg'],
     specifications: { 'Connectors': 'Lightning, USB-C, Micro-USB', 'Length': '1.2m', 'Power': '25W Max', 'Material': 'Braided Nylon', 'Compatibility': 'Universal' },
   },
   {
@@ -73,7 +73,7 @@ export const PRODUCTS = [
     badge: 'New', rating: 4.3, review_count: 44,
     short_description: 'Gravity-sensing car mount with CD slot and dashboard mounting options.',
     description: 'Auto-lock gravity car mount compatible with 4" to 7" phones. Fits CD slot or dashboard with included suction cup. One-handed operation with 360° rotation.',
-    images: ['https://images.unsplash.com/photo-1617788138017-80ad40651399?w=600&q=80'],
+    images: ['/assets/powerbank-4-17eCjlqr.jpg'],
     specifications: { 'Mount Type': 'CD Slot / Dashboard', 'Device Size': '4" - 7"', 'Rotation': '360°', 'Lock Type': 'Gravity Auto-Lock', 'Material': 'ABS + Silicone' },
   },
   {
@@ -83,7 +83,7 @@ export const PRODUCTS = [
     badge: null, rating: 4.6, review_count: 33,
     short_description: 'Extendable Bluetooth remote shutter tripod, doubles as a selfie stick.',
     description: 'Multi-function tripod that extends from 21cm to 160cm. Detachable Bluetooth remote works up to 10m range. Foldable and ultra-lightweight for travel.',
-    images: ['https://images.unsplash.com/photo-1526779259212-939e64788e3c?w=600&q=80'],
+    images: ['/assets/earphone-2-DGaIUvk1.jpg'],
     specifications: { 'Extended Length': 'Up to 160cm', 'Bluetooth Range': '10m', 'Battery': 'Built-in rechargeable', 'Compatibility': 'iOS & Android', 'Weight': '200g' },
   },
   {
@@ -93,7 +93,7 @@ export const PRODUCTS = [
     badge: null, rating: 4.1, review_count: 57,
     short_description: 'Compact OTG card reader supporting SD, TF, and USB-A simultaneously.',
     description: 'All-in-one USB-C hub with SD card reader, TF card reader, and USB-A port. Supports simultaneous reading. Plug-and-play with no driver installation required.',
-    images: ['https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80'],
+    images: ['/assets/powerbank-1-B6KU1BY8.jpg'],
     specifications: { 'Interface': 'USB-C', 'Ports': 'SD, TF, USB-A', 'Transfer Speed': 'Up to 5Gbps', 'Plug & Play': 'Yes', 'OS': 'Android, MacOS, Windows' },
   },
 
@@ -105,7 +105,7 @@ export const PRODUCTS = [
     badge: null, rating: 4.8, review_count: 124,
     short_description: 'Ultra-slim 10000mAh power bank with 22.5W fast charging and dual output.',
     description: 'Jutt Slim is the world-class ultra-thin power bank at just 12mm thick. Features 22.5W input/output, LED indicator display, and dual USB-A + USB-C outputs. Charges an iPhone 15 from 0 to 100% in under 90 minutes.',
-    images: ['https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=600&q=80'],
+    images: ['/assets/powerbank-1-B6KU1BY8.jpg'],
     specifications: { 'Capacity': '10,000 mAh', 'Output': '22.5W Max', 'Input': 'USB-C 22.5W', 'Ports': '2x USB-A, 1x USB-C', 'Thickness': '12mm', 'Weight': '186g' },
   },
   {
@@ -115,7 +115,7 @@ export const PRODUCTS = [
     badge: 'New', rating: 4.9, review_count: 89,
     short_description: 'Compact 65W GaN charger with 3 ports for simultaneous laptop, phone, and tablet charging.',
     description: 'Next-gen GaN (Gallium Nitride) technology delivers 65W total power in a package smaller than a credit card. PD 3.0 + QC 4.0 compatible. Charge your MacBook Pro from 0-50% in just 30 minutes.',
-    images: ['https://images.unsplash.com/photo-1616763355548-1b606f439f86?w=600&q=80'],
+    images: ['/assets/powerbank-2-l4eDv4NK.jpg'],
     specifications: { 'Total Power': '65W', 'Technology': 'GaN (Gallium Nitride)', 'Ports': '2x USB-C PD, 1x USB-A QC', 'Standards': 'PD3.0, QC4.0', 'Input': '100-240V', 'Safety': 'OVP, OCP, OTP' },
   },
   {
@@ -125,7 +125,7 @@ export const PRODUCTS = [
     badge: null, rating: 4.7, review_count: 67,
     short_description: 'High-capacity 20000mAh power bank with digital display showing exact battery percentage.',
     description: 'Never guess your charge level again. The built-in LCD display shows precise battery percentage. 22.5W bidirectional fast charging with pass-through support. Charge 3 devices simultaneously.',
-    images: ['https://images.unsplash.com/photo-1609892543539-c1f6f8b3e0a9?w=600&q=80'],
+    images: ['/assets/powerbank-3-Dzxoht3C.jpg'],
     specifications: { 'Capacity': '20,000 mAh', 'Display': 'LCD Digital Percentage', 'Output Power': '22.5W', 'Ports': '3 (USB-C, 2x USB-A)', 'Weight': '420g', 'Pass-Through': 'Yes' },
   },
   {
@@ -135,7 +135,7 @@ export const PRODUCTS = [
     badge: 'Hot', rating: 4.6, review_count: 42,
     short_description: '15W MagSafe-compatible wireless charging pad with LED indicator.',
     description: 'Perfectly aligned MagSafe wireless charging for iPhones. Delivers 15W for MagSafe-compatible devices, 10W for Qi2, and 5W for standard Qi. Anti-slip base with foreign object detection.',
-    images: ['https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&q=80'],
+    images: ['/assets/powerbank-4-17eCjlqr.jpg'],
     specifications: { 'Max Output': '15W (MagSafe)', 'Standards': 'MagSafe, Qi2, Qi', 'Cable': 'USB-C 1.5m', 'FOD': 'Yes', 'LED Indicator': 'Yes' },
   },
 
@@ -147,7 +147,7 @@ export const PRODUCTS = [
     badge: null, rating: 4.7, review_count: 156,
     short_description: 'True wireless earbuds with ANC, 30hr total battery, and IPX5 water resistance.',
     description: 'Jutt TWS Pro delivers a premium sound experience with active noise cancellation and deep bass drivers. Earbuds last 8 hours, case extends to 30 hours. Touch controls with voice assistant support.',
-    images: ['https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?w=600&q=80'],
+    images: ['/assets/earphone-1-DYzzoxEI.jpg'],
     specifications: { 'Driver': '13mm Dynamic', 'ANC': 'Active Noise Cancellation', 'Battery': '8hr + 22hr case', 'IPX Rating': 'IPX5', 'Bluetooth': '5.3', 'Latency': '35ms Gaming Mode' },
   },
   {
@@ -157,7 +157,7 @@ export const PRODUCTS = [
     badge: 'New', rating: 4.5, review_count: 88,
     short_description: 'Neckband earphones with magnetic eartips, 24hr battery, and cVc 8.0 mic.',
     description: 'Stay connected all day with Jutt Neckband earphones. Magnetic eartips snap together when not in use. cVc 8.0 noise-cancelling microphone for crystal-clear calls.',
-    images: ['https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&q=80'],
+    images: ['/assets/earphone-2-DGaIUvk1.jpg'],
     specifications: { 'Type': 'Neckband', 'Battery': '24 hours', 'Bluetooth': '5.0', 'Mic': 'cVc 8.0', 'Charging': 'USB-C', 'Magnetic': 'Yes' },
   },
   {
@@ -167,7 +167,7 @@ export const PRODUCTS = [
     badge: null, rating: 4.9, review_count: 43,
     short_description: 'Professional studio headphones with 40mm drivers, foldable design, and 50hr battery.',
     description: 'Studio-grade sound reproduction with custom-tuned 40mm neodymium drivers. Foldable design with memory foam earcups. Works wired (3.5mm) or wirelessly via Bluetooth 5.2.',
-    images: ['https://images.unsplash.com/photo-1583394293979-f5e0b0d91cd2?w=600&q=80'],
+    images: ['/assets/earphone-3-DrQ_pPtF.jpg'],
     specifications: { 'Driver': '40mm Neodymium', 'Frequency': '20Hz - 20kHz', 'Battery': '50 hours', 'Bluetooth': '5.2', 'Wired Mode': '3.5mm AUX', 'Foldable': 'Yes' },
   },
 
@@ -179,7 +179,7 @@ export const PRODUCTS = [
     badge: null, rating: 4.8, review_count: 201,
     short_description: 'AMOLED smartwatch with 100+ sport modes, Bluetooth calling, and 7-day battery.',
     description: 'The Jutt S9 Pro features a gorgeous 1.96" AMOLED display with always-on capabilities. Bluetooth calling, 100+ sport modes, heart rate/SpO2/stress monitoring. 7-day battery with customizable watch faces.',
-    images: ['https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80'],
+    images: ['/assets/earphone-3-DrQ_pPtF.jpg'],
     specifications: { 'Display': '1.96" AMOLED', 'Battery': '7 days', 'Sport Modes': '100+', 'Bluetooth Calling': 'Yes', 'Health': 'HR, SpO2, Stress, Sleep', 'Water Resistance': '5ATM' },
   },
   {
@@ -189,7 +189,7 @@ export const PRODUCTS = [
     badge: 'New', rating: 4.4, review_count: 78,
     short_description: 'Slim fitness band with continuous heart rate tracking, sleep analysis, and 14-day battery.',
     description: 'Track your health around the clock with Jutt Fitness Band Pulse 2. Automatic workout detection, female health tracking, and smart notifications. 1.47" AMOLED touch screen with always-on option.',
-    images: ['https://images.unsplash.com/photo-1575311373937-040b8e1fd5b6?w=600&q=80'],
+    images: ['/assets/earphone-2-DGaIUvk1.jpg'],
     specifications: { 'Display': '1.47" AMOLED', 'Battery': '14 days', 'Water Resistance': '5ATM', 'Sensors': 'HR, SpO2, Gyroscope', 'Auto Detection': '6 workouts', 'Charging': 'Magnetic' },
   },
   {
@@ -199,7 +199,7 @@ export const PRODUCTS = [
     badge: 'Hot', rating: 4.9, review_count: 34,
     short_description: 'Premium titanium sports watch with GPS, offline maps, and 21-day battery life.',
     description: 'Built for serious athletes. Aircraft-grade titanium case with sapphire crystal glass. Built-in GPS with offline topographic maps, altimeter, barometer, and compass. MIL-STD-810H military-grade durability.',
-    images: ['https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?w=600&q=80'],
+    images: ['/assets/earphone-1-DYzzoxEI.jpg'],
     specifications: { 'Case': 'Titanium + Sapphire Glass', 'GPS': 'Multi-band GNSS', 'Battery': 'GPS Mode 21 days', 'Durability': 'MIL-STD-810H', 'Dive Rating': '100m', 'Maps': 'Offline Topographic' },
   },
 
@@ -211,7 +211,7 @@ export const PRODUCTS = [
     badge: null, rating: 4.6, review_count: 112,
     short_description: 'Multi-platform wireless game controller with 1000Hz polling and hall effect sticks.',
     description: 'Professional wireless controller with Bluetooth 5.0 + USB-C wired mode. Hall effect joysticks eliminate drift. 10-hour battery, programmable back buttons, and vibration feedback.',
-    images: ['https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=600&q=80'],
+    images: ['/assets/powerbank-4-17eCjlqr.jpg'],
     specifications: { 'Connection': 'Bluetooth 5.0 + USB-C', 'Sticks': 'Hall Effect (Drift-Free)', 'Battery': '10 hours', 'Polling Rate': '1000Hz', 'Platforms': 'PC, Android, iOS', 'Back Buttons': '4 programmable' },
   },
   {
@@ -221,7 +221,7 @@ export const PRODUCTS = [
     badge: 'New', rating: 4.3, review_count: 67,
     short_description: 'Sensitive shoulder trigger buttons with RGB lighting for mobile PUBG/COD gaming.',
     description: 'Clip-on L1/R1 trigger buttons transform your phone into a gaming console. Ultra-sensitive 30-degree angle triggers, RGB underglow lighting, and universal compatibility.',
-    images: ['https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?w=600&q=80'],
+    images: ['/assets/earphone-4-D8h7Lxv4.jpg'],
     specifications: { 'Sensitivity': 'Ultra-sensitive', 'Lighting': 'RGB', 'Compatibility': 'Universal 4" - 6.7"', 'Material': 'ABS Plastic', 'Trigger Angle': '30°' },
   },
   {
@@ -231,7 +231,7 @@ export const PRODUCTS = [
     badge: null, rating: 4.7, review_count: 88,
     short_description: '7.1 virtual surround sound gaming headset with noise-cancelling mic and RGB.',
     description: 'Immersive 7.1 virtual surround sound with 50mm drivers for competitive gaming. Detachable noise-cancelling microphone, premium memory foam earcups, and RGB lighting effects.',
-    images: ['https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=600&q=80'],
+    images: ['/assets/earphone-3-DrQ_pPtF.jpg'],
     specifications: { 'Driver': '50mm', 'Surround': '7.1 Virtual', 'Microphone': 'Detachable NC Mic', 'RGB': 'Yes', 'Connection': 'USB + 3.5mm AUX', 'Weight': '320g' },
   },
 
@@ -243,7 +243,7 @@ export const PRODUCTS = [
     badge: null, rating: 4.5, review_count: 94,
     short_description: 'Compact 10W portable Bluetooth speaker with 360° audio and IPX7 waterproofing.',
     description: 'Big sound in a compact body. Jutt Boom delivers 10W of rich 360° audio with deep bass via passive radiator. IPX7 waterproof — take it to the beach, pool, or shower. 12-hour playtime.',
-    images: ['https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=600&q=80'],
+    images: ['/assets/feature-product-BP1DexGI.jpg'],
     specifications: { 'Power': '10W', 'Audio': '360° Omnidirectional', 'Waterproof': 'IPX7', 'Battery': '12 hours', 'Bluetooth': '5.2', 'TWS Pairing': 'Yes' },
   },
   {
@@ -253,7 +253,7 @@ export const PRODUCTS = [
     badge: 'Creator', rating: 4.6, review_count: 51,
     short_description: '10" LED ring light with adjustable tripod stand and phone holder for content creation.',
     description: 'Professional studio lighting at home. 3 color modes (3200K-5500K-6500K), 10 brightness levels. Includes adjustable 50-160cm tripod, universal phone holder, and remote control.',
-    images: ['https://images.unsplash.com/photo-1583863788434-e58b54931a21?w=600&q=80'],
+    images: ['/assets/powerbank-4-17eCjlqr.jpg'],
     specifications: { 'Size': '10 inches', 'Color Temp': '3200K / 5500K / 6500K', 'Brightness': '10 Levels', 'Tripod Height': '50-160cm', 'Power': 'USB', 'Remote': 'Included' },
   },
   {
@@ -263,7 +263,7 @@ export const PRODUCTS = [
     badge: 'Smart', rating: 4.2, review_count: 39,
     short_description: 'WiFi smart plug with energy monitoring, voice control (Alexa/Google), and scheduling.',
     description: 'Transform any appliance into a smart one. Monitor energy usage in real-time, set timers and schedules via app, and use voice control with Alexa and Google Assistant.',
-    images: ['https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80'],
+    images: ['/assets/powerbank-1-B6KU1BY8.jpg'],
     specifications: { 'WiFi': '2.4GHz 802.11 b/g/n', 'Voice Control': 'Alexa, Google', 'Energy Monitor': 'Yes', 'App': 'iOS & Android', 'Max Load': '16A / 3680W', 'Timer': 'Yes' },
   },
 
@@ -271,11 +271,11 @@ export const PRODUCTS = [
   {
     id: 'wiwu-3in1', sku: 'JM-WIWU-001', name: 'WIWU 3 in 1 Wireless Charger Speaker Wi-W022', slug: 'wiwu-3in1-wireless-charger',
     category_id: 'cat-3', category_slug: 'power-banks',
-    price: 12999, sale_price: 10999, stock_quantity: 18, status: 'published',
+    price: 9999, sale_price: 8999, stock_quantity: 18, status: 'published',
     badge: 'Premium', rating: 4.9, review_count: 28,
     short_description: 'Charge phone, earbuds, and smartwatch simultaneously with crystal-clear audio output.',
     description: 'The WIWU Wi-W022 is the ultimate desk companion. A premium 3-in-1 wireless charging station combined with a high-fidelity Bluetooth speaker. Charge your phone (15W MagSafe / 10W Qi), earbuds (5W), and smartwatch all at once while enjoying rich, room-filling sound.',
-    images: ['https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&q=80'],
+    images: ['/assets/feature-product-BP1DexGI.jpg'],
     specifications: { 'Phone Charging': '15W MagSafe / 10W Qi2', 'Earbuds Charging': '5W', 'Watch Charging': '3W', 'Speaker Power': '10W Hi-Fi', 'Bluetooth': '5.3 (Speaker)', 'Material': 'Premium Aluminium + Fabric' },
   },
 ];

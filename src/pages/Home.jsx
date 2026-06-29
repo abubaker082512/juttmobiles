@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, ChevronLeft, ChevronRight, Zap, Shield, Truck, Star } from 'lucide-react';
 import { useShop } from '../context/ShopContext';
@@ -8,34 +8,32 @@ import './Home.css';
 const HERO_SLIDES = [
   {
     id: 1,
-    badge: 'New Arrival',
-    title: 'WIWU 3-in-1 Wireless Charger Speaker',
-    subtitle: 'Charge phone, earbuds & smartwatch simultaneously',
-    cta: 'Shop Now',
-    ctaLink: '/products/wiwu-3in1-wireless-charger',
-    color: 'var(--gradient-primary)',
-    image: 'https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=80',
+    image: '/assets/banner-earbuds-9eqdCz9d.png',
+    mobileImage: '/assets/mobile-banner-earbuds-D36Ofzyg.png',
+    alt: 'Premium Earbuds Collection',
+    link: '/category/earphones'
   },
   {
     id: 2,
-    badge: 'Hot Deal',
-    title: 'Jutt 65W GaN Fast Wall Charger',
-    subtitle: 'Charge your laptop, phone & tablet — all at once',
-    cta: 'Shop Chargers',
-    ctaLink: '/category/power-banks',
-    color: 'var(--gradient-warm)',
-    image: 'https://images.unsplash.com/photo-1616763355548-1b606f439f86?w=800&q=80',
+    image: '/assets/banner-charger-Cdxd6ZJN.png',
+    mobileImage: '/assets/mobile-banner-charger-B8hbUMLE.png',
+    alt: 'Fast Charging Solutions',
+    link: '/category/power-banks'
   },
   {
     id: 3,
-    badge: 'Best Seller',
-    title: 'Jutt TWS Pro Wireless Earbuds',
-    subtitle: 'ANC, 30hr battery, IPX5 waterproof — pure audio bliss',
-    cta: 'Shop Earbuds',
-    ctaLink: '/category/earphones',
-    color: 'var(--gradient-secondary)',
-    image: 'https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?w=800&q=80',
+    image: '/assets/banner-gadgets-D279Hmu8.png',
+    mobileImage: '/assets/mobile-banner-gadgets-CWNqbCUm.png',
+    alt: 'Latest Smart Gadgets',
+    link: '/category/tech-gadgets'
   },
+  {
+    id: 4,
+    image: '/assets/banner-watch-BNQAlqxX.png',
+    mobileImage: '/assets/mobile-banner-watch-DySqjd1X.png',
+    alt: 'Smart Watches & Bands',
+    link: '/category/smart-watches'
+  }
 ];
 
 export default function Home() {
@@ -66,25 +64,16 @@ export default function Home() {
     <div className="home">
       {/* Hero Carousel */}
       <section className="hero">
-        {HERO_SLIDES.map((s, i) => (
-          <div key={s.id} className={`hero-slide ${i === slide ? 'hero-slide-active' : ''}`}>
-            <div className="hero-bg" style={{ backgroundImage: `url(${s.image})` }} />
-            <div className="hero-overlay" />
-            <div className="container hero-content">
-              <div className="hero-text animate-slide-up">
-                <span className="hero-badge">{s.badge}</span>
-                <h1 className="hero-title">{s.title}</h1>
-                <p className="hero-sub">{s.subtitle}</p>
-                <div className="hero-actions">
-                  <Link to={s.ctaLink} className="btn btn-primary btn-lg">
-                    {s.cta} <ArrowRight size={18} />
-                  </Link>
-                  <Link to="/products" className="btn btn-secondary btn-lg">Browse All</Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        ))}
+        <div className="hero-slider" style={{ transform: `translateX(-${slide * 100}%)`, display: 'flex', transition: 'transform 0.7s ease-out', width: '100%', height: '100%' }}>
+          {HERO_SLIDES.map((s) => (
+            <Link key={s.id} to={s.link} className="hero-slide-link" style={{ width: '100%', flexShrink: 0, display: 'block', position: 'relative', height: '100%' }}>
+              <picture style={{ display: 'block', width: '100%', height: '100%' }}>
+                <source media="(min-width: 768px)" srcSet={s.image} />
+                <img src={s.mobileImage} alt={s.alt} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+              </picture>
+            </Link>
+          ))}
+        </div>
 
         {/* Controls */}
         <button className="hero-btn hero-btn-prev" onClick={() => go(-1)} aria-label="Previous">
@@ -110,17 +99,32 @@ export default function Home() {
             </div>
           </div>
           <div className="category-grid">
-            {categories.map(cat => (
-              <Link key={cat.id} to={`/category/${cat.slug}`} className="category-card">
-                <div className="category-icon" style={{ background: `${cat.color}22`, borderColor: `${cat.color}44` }}>
-                  <span style={{ fontSize: '2rem' }}>{cat.icon}</span>
+            {categories.map(cat => {
+              const catProducts = products
+                .filter(p => (p.category_id === cat.id || p.category_slug === cat.slug) && p.status === 'published')
+                .slice(0, 3);
+              const mainImg = catProducts[0] 
+                ? (Array.isArray(catProducts[0].images) ? catProducts[0].images[0] : catProducts[0].images)
+                : '/assets/favicon.svg';
+
+              return (
+                <div key={cat.id} className="category-card-wrapper">
+                  <Link to={`/category/${cat.slug}`} className="category-card">
+                    <div className="category-icon">
+                      <img src={mainImg} alt={cat.name} className="category-main-img" />
+                    </div>
+                    <span className="category-name">{cat.name}</span>
+                  </Link>
+                  <div className="category-thumbnails">
+                    {catProducts.map(p => (
+                      <Link key={p.id} to={`/products/${p.slug}`} className="category-thumb-link" title={p.name}>
+                        <img src={Array.isArray(p.images) ? p.images[0] : p.images} alt={p.name} className="category-thumb-img" />
+                      </Link>
+                    ))}
+                  </div>
                 </div>
-                <div className="category-name">{cat.name}</div>
-                <div className="category-count">
-                  {products.filter(p => p.category_slug === cat.slug).length} products
-                </div>
-              </Link>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
